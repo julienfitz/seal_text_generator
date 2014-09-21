@@ -64,7 +64,6 @@ class TwilioController < ApplicationController
       """In season 5, episode 17 ('The Death Of The Queen Bee') of Bones, 
       the song 'Kiss From A Rose' is featured in Temperance's reunion where 
       she and Booth do a slow dance to the song."""
-
     ]
 
 
