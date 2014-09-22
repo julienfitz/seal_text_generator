@@ -4,15 +4,17 @@
   <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
-  <div class="col-sm-12 col-xs-12">
-    <div class="well">
+<div class="well">
 <div class="intro-text">
 <center>
 <div class="intro-heading">
   <h1>Welcome to the Seal Text Generator!</h1>
 </div>
 <div class="intro-lead-in">
-  <h3>Send your friends a text with a random lyric from Seal's iconic 1995 hit song,"Kiss From A Rose." Totally for fun and totally not harassment!</h3>
+  <h3>Send your friends a text with a random lyric from Seal's iconic 1995 hit song,"Kiss From A Rose"<br>
+    or<br> 
+    a random fact about the song "Kiss From A Rose!"<br> <br>
+    Totally for fun and totally not harassment!</h3>
 </div>
 
 <form action='/twilio' method='POST'>
@@ -32,4 +34,7 @@
 </center>
 </div>
 </div>
-</div>
+
+<body>
+  <center><%= image_tag("seal_as_a_seal.jpeg") %></center>
+</body>

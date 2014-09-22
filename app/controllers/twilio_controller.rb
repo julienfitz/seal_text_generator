@@ -42,8 +42,8 @@ class TwilioController < ApplicationController
       "In season 5, episode 17 ('The Death Of The Queen Bee') of Bones, the song 'Kiss From A Rose' is featured in Temperance's reunion where she and Booth do a slow dance to the song."
     ]
 
-    account_sid = 'AC47a172ee7e3248ed5579fce1899c9849'#ENV["account_sid"] 
-    auth_token = '728da0623dbb4a56198a05df9cce3602'#ENV["auth_token"] 
+    account_sid = ENV["account_sid"] 
+    auth_token = ENV["auth_token"] 
  
     @client = Twilio::REST::Client.new account_sid, auth_token 
 
@@ -55,7 +55,7 @@ class TwilioController < ApplicationController
       to: phone_num,
       body: message,   
     })
-
+    flash[:notice] = "Your text has been sent!"
     redirect_to root_path
 
   end
