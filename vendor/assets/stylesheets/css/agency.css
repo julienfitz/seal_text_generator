@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: url("seal_as_a_seal.jpg");
+    background-image: url("seal_as_a_seal.jpg");
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
