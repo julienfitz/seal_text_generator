@@ -6,8 +6,6 @@
 
 body {
     background: url("seal_as_a_seal.jpg");
-    background-size: cover;
-    background-attachment:fixed;
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
