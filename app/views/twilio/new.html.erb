@@ -1,2 +1,17 @@
 <h1>Welcome to the Seal Text Generator!</h1>
 <h3>Send your friends a text with a random lyric from Seal's iconic 1995 hit song,"Kiss From A Rose." Totally for fun and totally not harassment!</h3>
+
+<form action='/twilio' method='POST'>
+  <input name='authenticity_token' value=<%= form_authenticity_token %> type='hidden'>
+    <fieldset>
+      <label for="inputPhone">Phone Number</label>
+      <input type="tel" name="phone_number" id="inputPhone" placeholder="Phone #">
+      <label for="select">Select One:</label>
+      <select name='content' id="select">
+        <option value='lyric'>Send a Seal Lyric!</option>
+        <option value= 'fact'>Send a Seal Fact!</option>
+      </select>
+      <button class="btn btn-default">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form>

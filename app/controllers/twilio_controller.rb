@@ -66,8 +66,8 @@ class TwilioController < ApplicationController
       she and Booth do a slow dance to the song."""
     ]
 
-    account_sid = ENV["account_sid"]'AC47a172ee7e3248ed5579fce1899c9849' 
-    auth_token = ENV["auth_token"]'728da0623dbb4a56198a05df9cce3602' 
+    account_sid = ENV["account_sid"] 
+    auth_token = ENV["auth_token"] 
  
     @client = Twilio::REST::Client.new account_sid, auth_token 
 
@@ -80,7 +80,7 @@ class TwilioController < ApplicationController
       body: message,   
     })
 
-    redirect to root_path
+    redirect_to root_path
 
   end
 
