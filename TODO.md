@@ -1,5 +1,6 @@
 #TODO:
 
+* add ability to send multiple texts throughout a given time period, aka super-trollin'
 * ~~include Easter egg so a certain phone number sends you to the YouTube video for "Kiss From A Rose"~~<br>
 * verify that the number being input is an actual phone number<br>
 * if the number can't be texted due to a STOP request, show an error<br>
