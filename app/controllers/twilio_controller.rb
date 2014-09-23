@@ -50,14 +50,19 @@ class TwilioController < ApplicationController
     phone_num = params[:phone_number]
     message = params[:content] == 'lyric' ? seal_lyrics.sample : seal_facts.sample
  
-    @client.account.messages.create({
-      from: '+19292544762', 
-      to: phone_num,
-      body: message,   
-    })
-    flash[:notice] = "Your text has been sent!"
-    redirect_to root_path
+    easter_egg_array = ["6666666666","666-666-6666","1-666-666-6666",
+                        "(666)666-6666","16666666666","16666666666"]
 
+    if easter_egg_array.include?(phone_num)
+      redirect_to "https://www.youtube.com/watch?v=ateQQc-AgEM"
+    else
+      @client.account.messages.create({
+        from: '+19292544762', 
+        to: phone_num,
+        body: message,   
+      })
+      redirect_to root_path
+    end
   end
 
 end
