@@ -51,7 +51,8 @@ class TwilioController < ApplicationController
     message = params[:content] == 'lyric' ? seal_lyrics.sample : seal_facts.sample
  
     easter_egg_array = ["6666666666","666-666-6666","1-666-666-6666",
-                        "(666)666-6666","16666666666","16666666666"]
+                        "(666)666-6666","16666666666","16666666666","6666666",
+                        "666-6666"]
 
     if easter_egg_array.include?(phone_num)
       redirect_to "https://www.youtube.com/watch?v=ateQQc-AgEM"
