@@ -1,6 +1,11 @@
 class TwilioInfo < ActiveRecord::Base
   attr_reader :seal_lyrics, :seal_facts
 
+  def initialize
+    @seal_lyrics = self.seal_lyrics
+    @seal_facts = self.seal_facts
+  end
+
   def seal_lyrics
       [
       "There used to be a graying tower alone on the sea",
