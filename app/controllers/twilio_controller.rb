@@ -57,6 +57,8 @@ class TwilioController < ApplicationController
       redirect_to "https://www.youtube.com/watch?v=ateQQc-AgEM"
     elsif phone_num.upcase == "BATMANFOREVER"
       redirect_to "https://www.youtube.com/watch?v=1MiAszO_ni0"
+    elsif phone_num == ''
+      redirect_to "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     else
       @client.account.messages.create({
         from: '+19292544762', 
